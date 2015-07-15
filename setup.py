@@ -46,7 +46,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'pysaml2==2.2.0',
-        'python-memcached==1.48',
+        'pysaml3>=2.0.0b0',
+        'python3-memcached>=1.51',
         ],
     )

@@ -123,7 +123,7 @@ def login(request,
             entityid=selected_idp, relay_state=came_from,
             binding=BINDING_HTTP_REDIRECT,
             )
-    except TypeError, e:
+    except TypeError as e:
         logger.error('Unable to know which IdP to use')
         return HttpResponse(unicode(e))
 
